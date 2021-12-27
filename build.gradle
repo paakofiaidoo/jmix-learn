@@ -6,7 +6,7 @@ plugins {
 apply plugin: 'org.springframework.boot'
 
 jmix {
-    bomVersion = '1.1.1'
+    bomVersion = '1.1.2'
 }
 
 group = 'com.company'
@@ -38,6 +38,10 @@ dependencies {
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
     }
+    implementation("io.jmix.security:jmix-security-oauth2-starter")
+    implementation("io.jmix.rest:jmix-rest-starter")
+    implementation("io.jmix.search:jmix-search-ui-starter")
+    implementation("io.jmix.search:jmix-search-starter")
 }
 
 test {
