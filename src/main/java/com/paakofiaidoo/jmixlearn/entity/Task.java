@@ -32,6 +32,7 @@ public class Task {
 
     @Column(name = "ESSIMATED_EFFORT")
     private Integer essimatedEffort;
+
     @JoinColumn(name = "PROJECT_ID", nullable = false)
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     private Project project;
