@@ -42,6 +42,7 @@ dependencies {
     implementation("io.jmix.rest:jmix-rest-starter")
     implementation("io.jmix.search:jmix-search-ui-starter")
     implementation("io.jmix.search:jmix-search-starter")
+    implementation("org.postgresql:postgresql")
 }
 
 test {
